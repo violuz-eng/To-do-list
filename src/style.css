@@ -1,0 +1,153 @@
+/* Layout di sfondo centrato */
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: linear-gradient(135deg, #f3f0f7 0%, #e8e3f0 100%);
+  color: #2b2b2b;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Card centrale con angoli morbidi e ombra elegante */
+main {
+  width: 100%;
+  max-width: 440px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 30px 26px;
+  box-shadow: 0 12px 30px rgba(140, 120, 170, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 20px;
+  color: #332c40;
+  text-align: center;
+}
+
+/* Form di inserimento */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 2px solid #eee8f5;
+  border-radius: 12px;
+  font-size: 15px;
+  background: #faf8fc;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+input:focus {
+  border-color: #b39ddb;
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(179, 157, 219, 0.2);
+}
+
+/* Bottone Principale Lilla con Sfumatura */
+button {
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #b39ddb 0%, #9575cd 100%);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(149, 117, 205, 0.3);
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(149, 117, 205, 0.4);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Lista Task */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  background: #fcfbfe;
+  border: 1px solid #f0ebf7;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+li:hover {
+  background: #f5f0fb;
+  border-color: #e3d7f5;
+  transform: translateX(2px);
+}
+
+/* Assegnazioni completate */
+li.fatto {
+  background: #f8f6fc;
+  opacity: 0.8;
+}
+
+li.fatto .titolo {
+  text-decoration: line-through;
+  color: #b39ddb; /* Colore lilla per il testo completato */
+  font-weight: 500;
+}
+
+.titolo {
+  flex: 1;
+  font-size: 15px;
+  color: #444;
+}
+
+/* Tasto Elimina stilizzato */
+.elimina {
+  background: #fff0f0;
+  color: #d32f2f;
+  border: 1px solid #ffe0e0;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.elimina:hover {
+  background: #d32f2f;
+  color: #ffffff;
+  border-color: #d32f2f;
+}
+
+/* Info in basso */
+#info {
+  margin: 22px 0 0;
+  font-size: 13px;
+  color: #887b9b;
+  text-align: center;
+  font-weight: 500;
+}
